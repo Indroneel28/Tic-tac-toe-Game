@@ -99,10 +99,13 @@ nav{
     display: inline-block;
 }
 
+.info{
+    font-size: 7vh;
+}
 
 @media only screen and (max-width: 600px) {
     nav {
-        font-size: 5vw;
+        font-size: 10vw;
     }
 
     .game{
@@ -117,7 +120,7 @@ nav{
     }
 
     .box {
-        font-size: 5vw;
+        font-size: 10vw;
     }
 
     .gameInfo {
@@ -140,6 +143,7 @@ nav{
     }
     .info{
         width: 100vw;
+        font-size: 10vw;
     }
 
     .image img{
