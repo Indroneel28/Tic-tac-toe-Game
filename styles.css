@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+nav li{
+    list-style-type: none;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center; /*Aligning items vertically*/
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Borel', cursive;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.game{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,12.76vw);
+    grid-template-columns: repeat(3,12.76vw);
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 9vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: rgb(172, 172, 1);
+}
+
+.gameInfo{
+    padding: 0 100px 0 20px;
+    font-family: cursive;
+    width: 50vw;
+}
+
+.image img{
+    display: none;
+}
+
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 2vh 10vw;
+    padding: 1.5vh 1vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    position: relative;
+    right: 0px;
+}
+
+
+.footer{
+    background-color: black;
+    text-align:center
+}
+
+.footer a img{
+    background-color: white;
+    border-radius: 15%;
+    height: 6vh;
+    margin: 0.75vh 5vw 0 5vw;
+}
+
+.lol{
+    margin-top: 10vh;
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        font-size: 5vw;
+    }
+
+    .game{
+        display: flex;
+        flex-wrap: wrap;
+        height: 83vh;
+    }
+
+    .container {
+        grid-template-rows: repeat(3, 25vw);
+        grid-template-columns: repeat(3, 25vw);
+    }
+
+    .box {
+        font-size: 5vw;
+    }
+
+    .gameInfo {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center; /* Center align the text on small screens */
+        margin: 0;
+    }
+
+    #reset {
+        font-size: 5vw;
+        padding: 1.5vh 5vw;
+        border-radius: 10vw;
+    }
+
+    .lol{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info{
+        width: 100vw;
+    }
+
+    .image img{
+        height: 15vh;
+    }
+}
