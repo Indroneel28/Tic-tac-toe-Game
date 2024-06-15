@@ -9,7 +9,7 @@ let count= 0;
 
 //Function to change the turn
 const changeTurn= ()=>{
-    return turn==="X" ? "0" : "X";
+    return turn==="X" ? "O" : "X";
 }
 
 //Function to check for a win
