@@ -43,7 +43,7 @@ let boxes= document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext= element.querySelector(".botext");
     element.addEventListener('click',()=>{
-        if(boxtext.innerText===''){
+        if(boxtext.innerText==='' && !over){
             count++;
             boxtext.innerText= turn;
             turn= changeTurn();
